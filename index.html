@@ -1,16 +1,301 @@
-<!DOCTYPE html>
-
-<html>
-
-<body>
+ 
+<style> 
+  .container{
+    display:grid;
+    grid-template-rows: repeat(4, 1fr) 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
   
-  <a href="https://devinqiu.github.io/SurveyForm/">Survey Form</a>
-  <br>
-  <a href="https://devinqiu.github.io/PaulPierce/">Paul Pierce Tribute Page</a>
-  <br>
-  <a href="https://devinqiu.github.io/JaylenBrownProgression/">A fan-made webpage talking about the Boston Celtic Jaylen Brown's second year in the NBA.</a>
+  .item1{
+    background-color: #d1f8f9;
+    grid-area: one;
+    font-size: 20px;
+    
+    
+  }
+  
+  .item2{
+    background-color: #d1f8f9;
+    font-size: 40px;
+  }
+  .item3{
+    background-color: #ffffff;
+  }
+  .item4{
+    background-color: #a0e8a3;
+  }
+  .item5{
+    background-color: #23386d;
+  }
+  
+  .nav-bar{
+    float: right;
+    
+  }
+  .nav-about{
+    display: inline-block
+  }
+  .nav-work{
+    display: inline-block
+  }
+  .nav-contact{
+    display: inline-block
+  }
+  
+  .item2-content{
+    text-align: center;
+    padding: 100px;
+     }
+  
+  .item2-name{
+    font-size: 40px;
+    position: relative;
+    top: -250px;
+   
+    
+  }
+  .item2-name-2{
+    font-size: 18px;
+    position: relative;
+    top: -285px;
+    color: #66a53d;
+  }
+  
+  .item3-header-text{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+    color: black;
+  }
+  
+  .item3-projects-1-pic{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 100px;
+    top:100px;
+    border: 5px solid black;
+    
+  }
+  
+  .item3-projects-1-pic-caption{
+  background-color: #222; 
+  color: white;
+  font: sans-serif;
+  padding: 3px;
+  text-align: center;
+  width: 205px;
+  position: relative;
+  left: 139px;
+  top: 99px;
+  }
+  
+  .item3-projects-2-pic{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 600px;
+    top: -170px;
+    border: 5px solid black;
+    
+  }
+  .item3-projects-2-pic-caption{
+   background-color: #222;
+   color: white;
+   font: sans-serif;
+   padding: 3px;
+   text-align: center;
+   width: 205px;
+   position: relative;
+   left: 640px;
+   top: -170px;
+  }
+    
+  .item-3-showall-button{
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: 0px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10%;
+  border: 2px solid #009900;
+  background-color:  #d9f2d9;
+  color:  #006666;
+  font-weight: bold;
+}
+.item-3-showall-button:hover{
+    background-color: skyblue;
+}
+  
+ .item4-header-1{
+   text-align: center;
+   font-size: 30px;
+   position: relative;
+   top: 100px;
+   
+   
+   
+  }
+  
+ .item4-header-2{
+    text-align: center;
+    font-size: 20px;
+   position: relative;
+   top: 100px;
+
+  }
+  
+  .item-4-button-1-click{
+  position: relative;
+  left: 20%;
+  top: 200px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  border: 2px solid #009900;
+  background-color:  #d9f2d9;
+  color:  #006666;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.item-4-button-1-click:hover{
+    background-color: skyblue;
+}
+  
+ .item-4-button-2-click{
+  position: relative;
+  left: 80%;
+  top: 100px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  border: 2px solid #009900;
+  background-color:  #d9f2d9;
+  color:  #006666;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.item-4-button-2-click:hover{
+    background-color: skyblue;
+}
+  
+  .item5-header-text{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 40px;
+    
+   
+  }
   
 
-</body>
+  
+  
+  
+</style>
 
-</html>
+
+<div class="main">
+  
+  <div class="container">
+    <div class="item1">
+    
+      <nav class="nav-bar">
+        <ul class="nav-ele">
+          <li class="nav-about"><a href="#">About</a></li>
+          <li class="nav-work"><a href="#">Work</a></li>
+          <li class="nav-contact"><a href="#">Contact</a></li>
+        </ul>        
+      </nav>
+    
+    </div>
+    
+    <div class="item2">
+      
+      <div class="item2-content">
+         <p class="item2-name">Hey I'm Devin. </p>
+           <p class="item2-name-2"> and this is my portfolio page </p>
+      </div>
+    </div>        
+    
+    <div class="item3">
+      <div class="item3-header">        
+        <p class="item3-header-text">These are some of my projects...</p>        
+      </div>
+      
+      <div class="item3-projects">
+        
+        <div class="item3-projects-1">
+          <figure>
+            <a href="https://devinqiu.github.io/PaulPierce/" target="_blank"> <img class="item3-projects-1-pic" src="https://www.nbcsports.com/sites/nbcsports.com/files/2015/09/05/Pierce_0708.jpg" alt=" Tribute Page"> </a>           
+          </figure>
+          <figcaption>
+            <p class="item3-projects-1-pic-caption"> Tribute Page</p>
+          </figcaption>          
+        </div>
+        
+        <div class="item3-projects-2">
+          <figure>
+            <a href="https://devinqiu.github.io/SurveyForm/" target="_blank"> <img class="item3-projects-2-pic" src="http://cas.umw.edu/modernlanguages/files/2018/05/Survey-.jpg" alt="Survey Form"> </a>
+          </figure>
+          <figcaption>
+            <p class="item3-projects-2-pic-caption">Survey Form</p>
+            </figcaption>
+        </div>
+        
+      </div>
+      
+      <div class="item-3-showall">
+        <form action="https://github.com/DevinQiu">
+          <input class="item-3-showall-button" type="submit" value="Show all"/>
+        </form>  
+     </div>     
+      
+    </div>
+    
+    <div class="item4">
+      
+      <div class="item4-header">
+        <p class="item4-header-1"> Let's work together ... </p>
+        <p class="item4-header-2"> How do you take your coffee? </p>
+      </div>
+      
+      <div class="item4-buttons">
+        
+        <div class="item-4-button-1">
+          <form action="https://github.com/DevinQiu">
+             <input class="item-4-button-1-click" type="submit" value="GitHub"/>
+          </form>  
+        </div>
+        
+        <div class="item-4-button-2">
+          <form action="twitter.com">
+             <input class="item-4-button-2-click" type="submit" value="Twitter"/>
+          </form>  
+        </div>
+        
+      </div>   
+      
+    </div>
+    
+    <div class="item5">
+      
+      <div class="item5-header">
+        <footer class="item5-header-text">**This portfolio page is a work in progress**</footer>
+      </div>
+      
+     </div>
+    
+    </div>  
+  </div>
